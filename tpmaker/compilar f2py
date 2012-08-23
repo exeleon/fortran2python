@@ -1,0 +1,10 @@
+Encontrar compilador Intel:
+source /opt/intel/composer_xe_2011_sp1.6.233/bin/compilervars.sh intel64
+
+Comando para generar archivo.so:
+f2py -c --fcompiler=intelem --f90flags="-03 -r8 -w" -m tp_maker modulo.f90 memoria.f90 leer_binarios.f90 tp_maker.f90 deriv_vel_tp.f90 jacob_malla.f90 derivada.f90
+
+
+f2py -h tp_maker.pyf -m tp_maker modulo.f90 memoria.f90 leer_binarios.f90 tp_maker.f90 deriv_vel_tp.f90 jacob_malla.f90 derivada.f90
+
+
